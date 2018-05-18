@@ -1,12 +1,22 @@
-import Vue from 'vue';
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _vue = require('vue');
+
+var _vue2 = _interopRequireDefault(_vue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var warn = function warn(msg) {
-  if (!Vue.config.silent) {
+  if (!_vue2.default.config.silent) {
     console.warn(msg);
   }
 };
 
-export default {
+exports.default = {
   name: 'intersect',
   abstract: true,
   props: {
